@@ -25,16 +25,16 @@ def spades_high(card):
 
 if __name__ == '__main__':
     deck = FrenchDeck()
-    # print(len(deck))#支持len方法求扑克张数
-    # print(deck[1])  #支持通过序列访问 也自动支持切片操作
-    # print(deck[1:3])
-    # card1 = random.choice(deck) #随机取出一张扑克
-    # print(card1)
-    # for i in deck:  #打印所有扑克，形成的deck实例是支持迭代的
-    #     print(i)
-    # for i in reversed(deck):  #支持反向迭代
-    #     print(i)
-    # print(card('Q', 'hearts') in deck) #支持通过in判断card实例是否在扑克组中
+    print(len(deck))#支持len方法求扑克张数
+    print(deck[1])  #支持通过序列访问 也自动支持切片操作
+    print(deck[1:3])
+    card1 = random.choice(deck) #随机取出一张扑克
+    print(card1)
+    for i in deck:  #打印所有扑克，形成的deck实例是支持迭代的
+        print(i)
+    for i in reversed(deck):  #支持反向迭代
+        print(i)
+    print(card('Q', 'hearts') in deck) #支持通过in判断card实例是否在扑克组中
     print(suit_values)
     for card in sorted(deck,key=spades_high,reverse=True):
         print(card)
