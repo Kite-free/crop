@@ -9,9 +9,9 @@ class Fraction:
             self.button = -self.button
             self.top = -self.top
 
-    # def __str__(self):#print输出
-    #     # return(str(self.top//gcd(self.top, self.button)) + '/' + str(self.button//gcd(self.top, self.button)))
-    #     return('%r/%r'%(self.top//gcd(self.top, self.button),self.button//gcd(self.top, self.button)))
+    def __str__(self):#print输出
+        # return(str(self.top//gcd(self.top, self.button)) + '/' + str(self.button//gcd(self.top, self.button)))
+        return('%r/%r'%(self.top//gcd(self.top, self.button),self.button//gcd(self.top, self.button)))
     def __repr__(self):#print输出
         # return(str(self.top//gcd(self.top, self.button)) + '/' + str(self.button//gcd(self.top, self.button)))
         return('%r/%r'%(self.top//gcd(self.top, self.button),self.button//gcd(self.top, self.button)))
